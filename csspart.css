@@ -79,6 +79,17 @@ input, select {
 .form-row > div {
     flex: 1;
 }
+button{
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #173b63;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
 
 /* MAKE THE PAGE WORK ON MOBILE */
 @media (max-width: 600px) {
