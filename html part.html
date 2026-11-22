@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Guest House Booking</title>
+
+    <link rel="stylesheet" href="css part.css">
+</head>
+
+<body>
+
+    <!-- TOP SECTION -->
+    <header>
+        <h1>College Guest House</h1>
+        <p>Visiting Parent Room Booking System</p>
+    </header>
+
+    <!-- MENU -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#rooms">Rooms</a>
+        <a href="#booking">Book a Room</a>
+        <a href="#availability">Availability</a>
+    </nav>
+
+    <main class="container">
+
+        <!-- BOOKING FORM -->
+        <section class="booking-box" id="booking">
+            <h2>Guest Room Booking Form</h2>
+
+            <form id="bookingForm">
+
+                <label for="parentName">Parent / Guest Name</label>
+                <input type="text" id="parentName"
+                       placeholder="Enter guest name" required>
+
+                <label for="rollNumber">Student Roll Number</label>
+                <input type="text" id="rollNumber"
+                       placeholder="Enter student roll number" required>
+
+                <label for="idProof">ID Proof Details</label>
+                <input type="text" id="idProof"
+                       placeholder="Enter ID proof type and last 4 digits" required>
+
+                <label for="roomType">Select Room Type</label>
+                <select id="roomType" required>
+                    <option value="1000">Standard Double Room - ₹1,000/night</option>
+                    <option value="1800">Executive AC Suite - ₹1,800/night</option>
+                    <option value="2500">VIP Suite - ₹2,500/night</option>
+                </select>
+
+                <div class="form-row">
+                    <div>
+                        <label for="checkIn">Check-in Date</label>
+                        <input type="date" id="checkIn" required>
+                    </div>
+
+                    <div>
+                        <label for="checkOut">Check-out Date</label>
+                        <input type="date" id="checkOut" required>
+                    </div>
+                </div>
+
+                <label for="mealPlan">Meal Plan</label>
+                <select id="mealPlan">
+                    <option value="0">No Meal Plan - Free</option>
+                    <option value="150">Breakfast - ₹150 per night</option>
+                    <option value="300">Breakfast and Dinner - ₹300 per night</option>
+                </select>
+
+     </main>
+
+
+    <script src="java part.js"></script>
+
+</body>
+</html>
